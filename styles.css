@@ -55,3 +55,24 @@ nav > div{
     padding: 25px;
     margin-top: 50px;
 }
+.program-section{
+    background-color: #272a31;
+    background-image: url("assets/images/pattern_bg.png");
+}
+.program-section ul{
+    gap:1em;
+}
+.program-section li{
+    background-color: rgba(211, 211, 211, 0.1);
+    align-items: center;
+    gap:1em
+}
+
+.program-section i{
+    font-size: 3em;
+}
+
+.program-section button{
+    background-color: #ec5242;
+}
+
