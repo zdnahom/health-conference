@@ -58,6 +58,7 @@ nav > div{
 .program-section{
     background-color: #272a31;
     background-image: url("assets/images/pattern_bg.png");
+    padding-bottom: 50px;
 }
 .program-section ul{
     gap:1em;
@@ -74,5 +75,9 @@ nav > div{
 
 .program-section button{
     background-color: #ec5242;
+}
+
+.featured-speakers hr{
+    width: 5%;
 }
 
