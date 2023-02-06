@@ -3,23 +3,55 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     font-family: "Lato", sans-serif; 
+}
+.focus-color{
+    color:#ec5242;
 }
 
 .myHeader{
     display: none;
 }
+
 nav{
-    
+
 }
+
 nav i {
-    font-size: 2.4em;
+    font-size: 3.4em;
     color:#272a31;
-    padding-top: 5px;
+    padding: 15px;
 }
 
 nav > div{
     display: none !important;
 }
 
-
+.headline{
+    background-color: #D3D3D3;
+    
+}
+.headline div{
+    padding: 140px 5%;
+}
+.headline h1{
+    font-size: 4.2em;
+    font-weight: 900;
+}
+.headline ul{
+    margin-top: 50px;
+}
+.headline ul li{
+    font-size: 1.5em;
+    background-color: inherit;
+}
+.headline ul li i{
+    margin-right: 15px;
+}
+.headline p{
+    border: 2px solid #FFFFFF;
+    font-size: 1.5em;
+    padding: 25px;
+    margin-top: 50px;
+}
