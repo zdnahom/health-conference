@@ -37,6 +37,12 @@ const speakerObj = [
   },
 ];
 
+const speakers = document.querySelector('.featured-speakers');
+const menu = document.querySelector('.mobile-menu');
+const menuButton = document.querySelector('#menu');
+const closeButton = document.querySelector('#close-button');
+const menuLinks = document.querySelectorAll('.mobile-menu ul li');
+
 function generateSpeakers(data) {
   data.forEach((item) => {
     const speaker = document.createElement('div');
@@ -49,7 +55,21 @@ function generateSpeakers(data) {
             <hr>
             <p>${item.description}</p>
         </div>`;
-    document.querySelector('.featured-speakers').appendChild(speaker);
+    speakers.appendChild(speaker);
   });
 }
-generateSpeakers(speakerObj);
+function showMenu() {
+  menu.classList.remove('hide');
+}
+function closeMenu() {
+  menu.classList.add('hide');
+}
+menuButton.addEventListener('click', showMenu);
+closeButton.addEventListener('click', closeMenu);
+menuLinks.forEach((link) => {
+  link.addEventListener('click', closeMenu);
+});
+
+if (speakers) {
+  generateSpeakers(speakerObj);
+}
