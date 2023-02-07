@@ -80,4 +80,20 @@ nav > div{
 .featured-speakers hr{
     width: 5%;
 }
-
+.parteners-section{
+    background-color: #272a31;
+    color: #d3d3d3;
+}
+.parteners-section div{
+    /* background-color: red; */
+    gap: 10%;
+}
+.parteners-section img{
+    width: 200px;
+}
+footer{
+    background-color: #d3d3d3;
+}
+footer a{
+    
+}
