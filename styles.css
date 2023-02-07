@@ -1,99 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif; 
-}
-.focus-color{
-    color:#ec5242;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
 }
 
-.myHeader{
-    display: none;
+.focus-color {
+  color: #ec5242;
 }
 
-nav{
-
+.myHeader {
+  display: none;
 }
 
 nav i {
-    font-size: 3.4em;
-    color:#272a31;
-    padding: 15px;
+  font-size: 3.4em;
+  color: #272a31;
+  padding: 15px;
 }
 
-nav > div{
-    display: none !important;
+nav > div {
+  display: none !important;
 }
 
-.headline{
-    background-color: #D3D3D3;
-    
-}
-.headline div{
-    padding: 140px 5%;
-}
-.headline h1{
-    font-size: 4.2em;
-    font-weight: 900;
-}
-.headline ul{
-    margin-top: 50px;
-}
-.headline ul li{
-    font-size: 1.5em;
-    background-color: inherit;
-}
-.headline ul li i{
-    margin-right: 15px;
-}
-.headline p{
-    border: 2px solid #FFFFFF;
-    font-size: 1.5em;
-    padding: 25px;
-    margin-top: 50px;
-}
-.program-section{
-    background-color: #272a31;
-    background-image: url("assets/images/pattern_bg.png");
-    padding-bottom: 50px;
-}
-.program-section ul{
-    gap:1em;
-}
-.program-section li{
-    background-color: rgba(211, 211, 211, 0.1);
-    align-items: center;
-    gap:1em
+.headline {
+  background-color: #d3d3d3;
 }
 
-.program-section i{
-    font-size: 3em;
+.headline div {
+  padding: 140px 5%;
 }
 
-.program-section button{
-    background-color: #ec5242;
+.headline h1 {
+  font-size: 4.2em;
+  font-weight: 900;
 }
 
-.featured-speakers hr{
-    width: 5%;
+.headline ul {
+  margin-top: 50px;
 }
-.parteners-section{
-    background-color: #272a31;
-    color: #d3d3d3;
+
+.headline li {
+  font-size: 1.5em;
+  background-color: inherit;
 }
-.parteners-section div{
-    /* background-color: red; */
-    gap: 10%;
+
+.headline i {
+  margin-right: 15px;
 }
-.parteners-section img{
-    width: 200px;
+
+.headline p {
+  border: 2px solid #fff;
+  font-size: 1.5em;
+  padding: 25px;
+  margin-top: 50px;
 }
-footer{
-    background-color: #d3d3d3;
+
+.program-section {
+  background-color: #272a31;
+  background-image: url("assets/images/pattern_bg.png");
+  padding-bottom: 50px;
 }
-footer a{
-    
+
+.program-section ul {
+  gap: 1em;
+}
+
+.program-section li {
+  background-color: rgba(211, 211, 211, 0.1);
+  align-items: center;
+  gap: 1em;
+}
+
+.program-section i {
+  font-size: 3em;
+}
+
+.program-section button {
+  background-color: #ec5242;
+}
+
+.featured-speakers hr {
+  width: 5%;
+}
+
+.parteners-section {
+  background-color: #272a31;
+  color: #d3d3d3;
+}
+
+.parteners-section div {
+  gap: 10%;
+}
+
+.parteners-section img {
+  width: 200px;
+}
+
+footer {
+  background-color: #d3d3d3;
 }
