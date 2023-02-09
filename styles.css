@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@300;400;700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,18 +8,30 @@
   font-family: "Lato", sans-serif;
 }
 
+html {
+  font-size: 62.25%;
+}
+
+.logo {
+  font-family: "Pacifico", sans-serif;
+}
+
 .focus-color {
-  color: #ec5242;
+  color: #ec5242 !important;
 }
 
 .focus-underline {
   background-color: #ec5242;
-  width: 40px;
+  width: 3em;
   height: 2px;
 }
 
 .myHeader {
   display: none;
+}
+
+nav {
+  background-color: rgba(211, 211, 211, 0.3);
 }
 
 nav i {
@@ -32,16 +45,27 @@ nav > div {
 }
 
 .headline {
-  background-color: #d3d3d3;
+  background-image: url('assets/images/op-1.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .headline > div {
-  padding: 100px 5%;
+  padding: 5em 2em;
+}
+
+.headline h2 {
+  font-size: 3.3em;
 }
 
 .headline h1 {
-  font-size: 4.2em;
+  background-image: url('assets/images/text-bg.jpg');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5em;
   font-weight: 900;
+  padding-right: 25%;
 }
 
 .headline ul {
@@ -49,7 +73,7 @@ nav > div {
 }
 
 .headline li {
-  font-size: 1.5em;
+  font-size: 1.2em;
   background-color: inherit;
 }
 
@@ -59,7 +83,13 @@ nav > div {
 
 .headline p {
   font-size: 1.5em;
-  padding: 25px;
+  padding: 2em;
+}
+
+.headline-date {
+  color: rgba(39, 42, 49, 0.8);
+  font-size: 3.3em !important;
+  font-weight: 900;
 }
 
 .program-section {
@@ -69,17 +99,29 @@ nav > div {
 }
 
 .program-section ul {
-  gap: 1em;
+  gap: 0.5em;
+  padding: 2%;
 }
 
-.program-section li {
+.program-section ul li {
+  position: relative;
   background-color: rgba(211, 211, 211, 0.1);
   align-items: center;
+  justify-content: space-between;
   gap: 1em;
+  font-size: 1em;
+  color: #d3d3d3;
+  padding: 1em;
+}
+
+.program-title {
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
 
 .program-section i {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 .program-section button {
@@ -90,24 +132,50 @@ nav > div {
   width: 5%;
 }
 
+.featured-speakers img {
+  width: 200px;
+  height: 200px;
+}
+
+.speakers-container {
+  padding: 3% 3%;
+}
+
 .partners-section {
   background-color: #272a31;
   color: #d3d3d3;
 }
 
-.partners-section div {
-  gap: 10%;
+.partners-container {
+  gap: 1em;
+  padding: 1em;
+  flex-direction: column;
 }
 
-.partners-section img {
-  width: 200px;
+.partners-container a {
+  height: 100px;
+}
+
+.partners-container img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer div {
-  background-color: #d3d3d3;
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+.logo-description {
+  padding-bottom: 3em;
+}
+
+.logo-container {
+  padding: 2em;
+  font-size: 3em;
 }
 
 .past-summits {
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -133,4 +201,98 @@ nav > div {
   width: 100%;
   height: 100vh;
   z-index: 2;
+}
+
+@media all and (min-width: 768px) {
+  html {
+    font-size: 88%;
+  }
+
+  body {
+    overflow: unset;
+  }
+
+  header {
+    overflow: unset;
+    z-index: 2;
+  }
+
+  .myHeader {
+    display: flex !important;
+    background-color: #272a31;
+    justify-content: space-around;
+  }
+
+  nav {
+    background-color: #fff;
+    box-shadow: 0 10px 10px #aaa;
+    overflow: hidden;
+  }
+
+  nav > div {
+    display: flex !important;
+    align-items: center;
+    justify-content: end;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    align-items: center;
+    gap: 2em;
+  }
+
+  .headline div {
+    padding: 10em 10%;
+  }
+
+  .headline ul {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .campaign-link {
+    border: 5px solid #ec5242;
+  }
+
+  .program-section ul {
+    flex-direction: row;
+    padding: 2% 10%;
+  }
+
+  .program-section ul li {
+    flex-direction: column;
+  }
+
+  .program-title {
+    flex-direction: column;
+  }
+
+  .speakers-container {
+    grid-template-columns: auto auto;
+    gap: 2%;
+    padding: 3% 10%;
+  }
+
+  .partners-container {
+    flex-direction: row !important;
+    justify-content: center;
+    gap: 4em;
+  }
+
+  .logo-container {
+    padding: 2em 4em;
+    font-size: 4em;
+  }
+
+  .past-summits {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .summit {
+    width: 40%;
+  }
 }

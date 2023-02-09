@@ -37,7 +37,8 @@ const speakerObj = [
   },
 ];
 
-const speakers = document.querySelector('.featured-speakers');
+// const speakers = document.querySelector('.featured-speakers');
+const speakers = document.querySelector('.speakers-container');
 const menu = document.querySelector('.mobile-menu');
 const menuButton = document.querySelector('#menu');
 const closeButton = document.querySelector('#close-button');
@@ -48,7 +49,7 @@ function generateSpeakers(data) {
     const speaker = document.createElement('div');
     speaker.className = 'd-flex mb-5';
     speaker.innerHTML = `
-        <img src=${item.image} alt="speaker picture">
+        <img src=${item.image} alt="speaker picture" >
         <div class="ms-4">
             <h3 class="fw-bold">${item.name}</h3>
             <p class="focus-color">${item.position}</p>
