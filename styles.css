@@ -40,9 +40,7 @@ nav i {
   padding: 15px;
 }
 
-nav ul {
-  gap: 2em;
-}
+
 
 nav > div {
   display: none !important;
@@ -235,10 +233,18 @@ nav > div {
 
   nav > div {
     display: flex !important;
+    align-items: center;
+    justify-content: end;
+    
   }
 
   nav button {
     display: none;
+  }
+
+  nav ul {
+    align-items: center;
+    gap: 2em;
   }
 
   .headline div {
