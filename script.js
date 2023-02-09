@@ -38,7 +38,7 @@ const speakerObj = [
 ];
 
 // const speakers = document.querySelector('.featured-speakers');
-const speakers = document.querySelector(".speakers-container")
+const speakers = document.querySelector('.speakers-container');
 const menu = document.querySelector('.mobile-menu');
 const menuButton = document.querySelector('#menu');
 const closeButton = document.querySelector('#close-button');
