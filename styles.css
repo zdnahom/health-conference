@@ -40,8 +40,6 @@ nav i {
   padding: 15px;
 }
 
-
-
 nav > div {
   display: none !important;
 }
@@ -235,7 +233,6 @@ nav > div {
     display: flex !important;
     align-items: center;
     justify-content: end;
-    
   }
 
   nav button {
